@@ -190,9 +190,12 @@
 		       placeholder="请输入字符"
 		       ng-model="fontArray">
 		</div>
-	<div style="overflow: hidden">
-		<div class="btn_60_36" style="background-color: #3db1fa;float: right;margin-top: 0.4rem;margin-right: 0.2rem" ng-click="setName()">组合</div>
-		<div class="btn_60_36" style="background-color: #8aff7e;float: right;margin-top: 0.4rem;margin-right: 0.2rem" ng-click="setDefault()">全木</div>
+	<div style="overflow: hidden;margin-top: 0.4rem;">
+		<span style="font-size: 0.4rem;color: #000;margin-left: 0.2rem;">
+			数量：{{result['length']}}
+		</span>
+		<div class="btn_60_36" style="background-color: #3db1fa;float: right;margin-right: 0.2rem" ng-click="setName()">组合</div>
+		<div class="btn_60_36" style="background-color: #8aff7e;float: right;margin-right: 0.2rem" ng-click="setDefault()">全木</div>
 	</div>
 	<div style="margin-top: .40rem;padding-left: 0.2rem;overflow: hidden;padding-bottom: 0.4rem">
 		<div class="name" ng-repeat="item in result track by $index" ng-bind="item"></div>
